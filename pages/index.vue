@@ -36,22 +36,23 @@
 import {getPageTable} from 'vue3-notion'
 import ArticleCard from "../components/articles/article-card";
 import {onMounted} from "vue";
-const pageTable = await getPageTable("b4e2f642b4db46138ecc83ba12b63d0a");
-// sort published pages
-pageTable.forEach(item => {
-    item.date = new Date(item.date)
-})
 
-const postsStarred = pageTable.filter((page) => page.published && page.starred).sort((a,b) => {
-                 // alphabetical order for starred
-    return (a.title >= b.title)?1:-1
-})
-const posts = pageTable
-        .filter((page) => page.published && !page.starred)
-        .sort((a, b) => {
-            return b.date - a.date // date order for non starred
-        });
-onMounted(() =>{
+onMounted(async () =>{
+    const pageTable = await getPageTable("b4e2f642b4db46138ecc83ba12b63d0a");
+// sort published pages
+    pageTable.forEach(item => {
+        item.date = new Date(item.date)
+    })
+
+    const postsStarred = pageTable.filter((page) => page.published && page.starred).sort((a,b) => {
+        // alphabetical order for starred
+        return (a.title >= b.title)?1:-1
+    })
+    const posts = pageTable
+            .filter((page) => page.published && !page.starred)
+            .sort((a, b) => {
+                return b.date - a.date // date order for non starred
+            });
     window.scroll(0,0)
 })
 // convert array of pages to a map of tags with page arrays
