@@ -17,7 +17,7 @@
                             <div
                                     class="absolute my-rotate-y-180 backface-hidden w-full h-full overflow-hidden pb-2"
                             >
-                                <img src="https://link.eu1.storjshare.io/jur6wfnzdwv2ex6ayls6hlbd5s2q/personal-website%2Fpic.jpeg?wrap=0"
+                                <img src="https://link.eu1.storjshare.io/jw2ucjwkfnb5f52hjzhqsrx34fhq/personal-website%2F1646178574285.jpeg?wrap=0"
                                      class="mx-auto rounded-full border w-72 mb-8 bg-white">
 
 
