@@ -4,8 +4,7 @@
             <div class="block  mx-auto rounded-full w-72 max-w-full h-72 mb-8 bg-cover bg-center"
                  >
                 <transition appear>
-                    <div
-                            class="w-72 h-72 bg-transparent cursor-pointer group perspective"
+                    <div class="w-72 h-72 bg-transparent cursor-pointer group perspective"
                     >
                         <div
                                 class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-700"
