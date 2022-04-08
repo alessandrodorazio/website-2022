@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "nuxt3": "latest",
+    "vue": "^3.2.31",
+    "unenv": "latest",
+    "@nuxtjs/tailwindcss": "^5.0.2",
+    "vue3-notion": "^0.1.26"
+  }
+}

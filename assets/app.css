@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html {
+    font-family: "Lato", serif;
+}
+
+/* Buttons */
+
+.button {
+    @apply flex inline-flex bg-gradient-to-r from-white to-white text-gray-700 fill-gray-700 transition transition-all duration-100 content-center py-1 px-4 rounded-full font-bold;
+}
+
+.button span {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600;
+}
+
+.button svg {
+    @apply fill-blue-600;
+}
+
+.button-container {
+    @apply inline-flex py-[2px] px-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-2;
+}
+
+.button:hover {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+}
+
+.button:hover span {
+    @apply text-white;
+}
+
+.button:hover svg {
+    @apply fill-white;
+}
+
+/* Articles */
+.posts-list {
+    @apply mt-12 lg:mt-0;
+}
+
+.article-list-back-button {
+    @apply button gap-2 cursor-pointer;
+}
+
+/* Articles cards */
+.article-card-container {
+    @apply bg-white rounded-lg;
+}
+
+.article-card-container-starred {
+    @apply px-4 py-2;
+}
+
+.article-card-container-not-starred {
+    @apply mt-2 lg:mt-4 px-8 py-4 shadow shadow-gray-200 mb-4;
+}
+
+.article-card-link-container {
+    @apply flex inline-flex justify-between;
+}
+
+.article-card-link-title-container {
+    @apply text-2xl flex content-center justify-center items-baseline gap-1 font-bold cursor-pointer;
+}
+
+.article-card-link-title-content {
+    @apply text-transparent bg-clip-text bg-gradient-to-br;
+}
+
+.article-card-updated-at-content {
+    @apply text-sm text-gray-500 mb-1 flex gap-1 items-center font-bold;
+}
+
+.article-card-excerpt {
+    @apply break-words text-sm mb-2 text-base text-justify text-gray-600;
+}
+
+
+/* Headings */
+h1, .h1 {
+    @apply text-3xl font-bold mb-4;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600;
+}
+
+h2, .h2 {
+    @apply text-2xl text-purple-600;
+}
+
+h3, .h3 {
+    @apply text-xl text-purple-600;
+}
+
+/* Notion Renderer */
+.notion-page {
+    font-family: "Lato", serif;
+    @apply text-gray-800 px-0 mx-0;
+}
+
+.notion-title {
+    @apply h1  mt-0;
+    @apply text-4xl !important;
+}
+
+.notion-h1 {
+    @apply h1 mb-1;
+    @apply from-purple-600 to-purple-800 !important;
+}
+
+.notion-h2 {
+    @apply h2;
+}
+
+.notion-h3 {
+    @apply h3;
+}
+
+.notion-text {
+    @apply text-lg text-justify;
+}
+
+/* Sidebar */
+.sidebar-list {
+    @apply mb-4 mx-2 lg:mx-4 2xl:mx-8 rounded-lg bg-white shadow shadow-gray-200;
+}
+.sidebar-list-item {
+    @apply text-2xl font-bold flex items-center justify-center gap-2 py-4;
+}
+
+.sidebar-list-item-sm {
+    @apply sidebar-list-item;
+    @apply font-medium text-xl text-gray-700 py-4 !important;
+}
+
+.sidebar-list-item-link {
+    @apply text-gray-500 text-sm;
+}
+
+.sidebar-social-container {
+    @apply flex justify-center content-center items-center w-full gap-8;
+}
+
+.sidebar-social-container svg {
+    @apply fill-gray-500 transition duration-200 w-8 h-8;
+}
+
+
+
+
+.my-rotate-y-180 {
+    transform: rotateY(180deg);
+}
+
+.preserve-3d {
+    transform-style: preserve-3d;
+}
+
+
+
+.backface-hidden {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.group:hover .group-hover\:bottom-20 {
+    bottom: 5rem;
+}
+
+.group:hover .group-hover\:scale-125 {
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:my-rotate-y-180 {
+    transform: rotateY(180deg);
+}
