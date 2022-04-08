@@ -14,7 +14,7 @@ const dateFormatted = props.article.date.toLocaleDateString()
 <template>
     <div class="article-card-container" :class="{'article-card-container-starred': props.article.starred, 'article-card-container-not-starred': !props.article.starred}">
         <div class="article-card-link-container">
-            <NuxtLink :href="'/blog/' + props.article.slug" :class="{'mb-1' : !props.article.starred}">
+            <NuxtLink :href="'/blog/' + props.article.slug + '.html'" :class="{'mb-1' : !props.article.starred}">
                 <h2 class="article-card-link-title-container">
                                     <span v-if="props.article.starred">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-5 mr-1"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><defs></defs><path

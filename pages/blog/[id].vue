@@ -4,7 +4,7 @@ import {useRoute} from 'vue-router'
 const route = useRoute()
 import {NotionRenderer, useGetPageBlocks} from "vue3-notion"
 import {onMounted } from 'vue'
-const articleId = route.params.id;
+const articleId = route.params.id.replace('.html', '');
 
 
 const articleIdHyphened = route.params.id.substring(0, 8) + '-' + route.params.id.substring(8, 12) + '-' + route.params.id.substring(12, 16) + '-' + route.params.id.substring(16, 20) + '-' + route.params.id.substring(20, 32)
