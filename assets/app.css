@@ -94,7 +94,7 @@ h3, .h3 {
 /* Notion Renderer */
 .notion-page {
     font-family: "Lato", serif;
-    @apply text-gray-800 px-0 mx-0;
+    @apply text-gray-800 px-0 mx-0 w-full;
 }
 
 .notion-title {
