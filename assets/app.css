@@ -131,6 +131,10 @@ h3, .h3 {
     @apply text-lg text-justify;
 }
 
+.notion-bookmark {
+    min-height: 150px;
+}
+
 /* Sidebar */
 .sidebar-list {
     @apply mb-4 mx-2 lg:mx-4 2xl:mx-8 rounded-lg bg-white shadow shadow-gray-200;
