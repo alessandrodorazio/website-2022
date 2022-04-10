@@ -7,9 +7,16 @@
         <div class="container">
             <div>
                 <div class="posts-list">
-                    <div class="bg-white px-4 py-2 rounded-lg shadow shadow-gray-200 mb-4" v-if="postsStarred">
-                        <article-card v-for="(post, k) in postsStarred" :article="post" :key="'article-'+k" />
+                    <div class="article-card-starred-list-container">
+                        <div class="article-card-starred-list" v-if="postsStarred">
+                            <div v-for="(post, k) in postsStarred">
+                                <article-card  :article="post" :key="'article-'+k" />
+                                <div class="w-full h-0.5 bg-gray-200" v-if="k<postsStarred.length-1"></div>
+                            </div>
+
+                        </div>
                     </div>
+
                     <div>
                         <!--<h1 class="font-bold">Latest posts</h1>-->
                         <div v-if="posts">

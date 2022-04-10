@@ -44,6 +44,14 @@ html {
 }
 
 /* Articles cards */
+.article-card-starred-list {
+    @apply bg-white px-4 py-2 rounded-lg;
+}
+
+.article-card-starred-list-container {
+    @apply px-[1.5px] py-[1.5px] bg-gradient-to-r from-orange-600 to-red-600 rounded-lg mb-4;
+}
+
 .article-card-container {
     @apply bg-white rounded-lg;
 }
@@ -53,7 +61,11 @@ html {
 }
 
 .article-card-container-not-starred {
-    @apply mt-2 lg:mt-4 px-8 py-4 shadow shadow-gray-200 mb-4;
+    @apply px-8 py-4;
+}
+
+.article-card-container-not-starred-bg-gradient {
+    @apply px-[1.5px] py-[1.5px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg mt-2 lg:mt-4 mb-4;
 }
 
 .article-card-link-container {
