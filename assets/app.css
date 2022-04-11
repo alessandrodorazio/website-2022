@@ -6,42 +6,13 @@ html {
 
 /* Buttons */
 
-.button {
-    @apply flex inline-flex bg-gradient-to-r from-white to-white text-gray-700 fill-gray-700 transition transition-all duration-100 content-center py-1 px-4 rounded-full font-bold;
-}
-
-.button span {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600;
-}
-
-.button svg {
-    @apply fill-blue-600;
-}
-
-.button-container {
-    @apply inline-flex py-[2px] px-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-2;
-}
-
-.button:hover {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600;
-}
-
-.button:hover span {
-    @apply text-white;
-}
-
-.button:hover svg {
-    @apply fill-white;
-}
 
 /* Articles */
 .posts-list {
     @apply mt-12 lg:mt-0;
 }
 
-.article-list-back-button {
-    @apply button gap-2 cursor-pointer;
-}
+
 
 /* Articles cards */
 .article-card-starred-list {
@@ -49,45 +20,11 @@ html {
 }
 
 .article-card-starred-list-container {
-    @apply px-[2.5px] py-[2.5px] bg-gradient-to-r from-orange-600 to-red-600 rounded-[0.65rem];
+    @apply px-[3px] py-[3px] bg-gradient-to-r from-orange-600 to-red-600 rounded-[0.65rem];
     @apply mb-8 !important;
 }
 
-.article-card-container {
-    @apply bg-white rounded-lg;
-}
 
-.article-card-container-starred {
-    @apply px-4 py-4;
-}
-
-.article-card-container-not-starred {
-    @apply px-8 py-4;
-}
-
-.article-card-container-not-starred-bg-gradient {
-    @apply px-[2.5px] py-[2.5px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-[0.65rem] mt-2 lg:mt-4 mb-4;
-}
-
-.article-card-link-container {
-    @apply flex inline-flex justify-between;
-}
-
-.article-card-link-title-container {
-    @apply text-2xl flex content-center justify-center items-baseline gap-1 font-bold cursor-pointer;
-}
-
-.article-card-link-title-content {
-    @apply text-transparent bg-clip-text bg-gradient-to-br;
-}
-
-.article-card-updated-at-content {
-    @apply text-sm text-gray-500 mb-1 flex gap-1 items-center font-bold;
-}
-
-.article-card-excerpt {
-    @apply break-words text-sm mb-2 text-base text-justify text-gray-600;
-}
 
 
 /* Headings */
