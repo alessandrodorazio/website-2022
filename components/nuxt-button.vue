@@ -13,7 +13,7 @@ const props = defineProps(["href"])
 <style scoped>
 
 .container {
-    @apply inline-flex py-[2px] px-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-2;
+    @apply w-auto inline-flex py-[2px] px-[2px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-2;
 }
 
 .button {
