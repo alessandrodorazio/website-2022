@@ -9,6 +9,7 @@
     </Head>
     <div class="container">
       <div>
+        
         <div class="posts-list">
           <div class="article-card-starred-list-container" v-if="postsStarred">
             <article-list
@@ -56,5 +57,5 @@ onMounted(async () => {
       return b.date - a.date; // date order for non starred
     });
   window.scroll(0, 0);
-});
+}); 
 </script>

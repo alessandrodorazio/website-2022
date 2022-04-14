@@ -11,7 +11,7 @@
                         >
                             <div class="absolute backface-hidden w-full h-full">
                                 <img src="https://link.eu1.storjshare.io/ju7c2keywdl4rgmostpqhnjs6vfa/personal-website%2Falpaca019.jpeg?wrap=0"
-                                     class="mx-auto rounded-full border border-yellow-600 w-72 mb-8 bg-white"
+                                     class="mx-auto rounded-full border w-72 mb-8 bg-white"
                                 />
                             </div>
                             <div
@@ -24,12 +24,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <img :src="logo.value"
-                         class="mx-auto rounded-full border border-yellow-600 drop-shadow-xl shadow-gray-400 w-72 mb-8 bg-white"
-                         alt="" v-if="logo.value"> -->
 
-                
             </div>
             <div class="mb-6">
                 <h1 class="h1">Alessandro D'Orazio</h1>
@@ -130,11 +125,3 @@
         </div>
     </div>
 </template>
-
-<script setup>
-
-</script>
-
-<style scoped>
-
-</style>

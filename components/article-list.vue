@@ -2,7 +2,6 @@
 import ArticleCard from './articles/article-card.vue'
 const props = defineProps(["articles", "key", "divider"])
 const articlesLength = props.articles.length
-console.log(props.articles)
 </script>
 
 <template>
