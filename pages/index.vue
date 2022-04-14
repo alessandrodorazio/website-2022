@@ -35,9 +35,7 @@ import { getPageTable } from "vue3-notion";
 const pageTable = ref(null);
 const posts = ref(null);
 const postsStarred = ref(null);
-
-onMounted(async () => {
-  pageTable.value = await getPageTable("b4e2f642b4db46138ecc83ba12b63d0a");
+pageTable.value = await getPageTable("b4e2f642b4db46138ecc83ba12b63d0a");
 
   // sort published pages
   pageTable.value.forEach((item) => {
@@ -56,6 +54,8 @@ onMounted(async () => {
     .sort((a, b) => {
       return b.date - a.date; // date order for non starred
     });
+onMounted(async () => {
+  
   window.scroll(0, 0);
 }); 
 </script>
