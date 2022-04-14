@@ -3,7 +3,7 @@
         <div class="lg:mb-24">
             <div class="block  mx-auto rounded-full w-72 max-w-full h-72 mb-8 bg-cover bg-center"
                  >
-                <transition appear>
+                
                     <div class="w-72 h-72 bg-transparent cursor-pointer group perspective"
                     >
                         <div
@@ -29,7 +29,7 @@
                          class="mx-auto rounded-full border border-yellow-600 drop-shadow-xl shadow-gray-400 w-72 mb-8 bg-white"
                          alt="" v-if="logo.value"> -->
 
-                </transition>
+                
             </div>
             <div class="mb-6">
                 <h1 class="h1">Alessandro D'Orazio</h1>
