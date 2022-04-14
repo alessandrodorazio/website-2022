@@ -1,0 +1,8 @@
+{
+    "nuxt.isNuxtApp": false,
+    "search.exclude": {
+        "**/node_modules": false,
+        "**/node_moduless": true
+    },
+    "search.useIgnoreFiles": true
+}
