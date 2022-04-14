@@ -10,7 +10,7 @@
                                 class="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-700"
                         >
                             <div class="absolute backface-hidden w-full h-full">
-                                <img src="https://link.eu1.storjshare.io/juksqb32suvyvpdi7caat7ampkoa/personal-website%2Falpaca007.jpeg?wrap=0"
+                                <img src="https://link.eu1.storjshare.io/ju7c2keywdl4rgmostpqhnjs6vfa/personal-website%2Falpaca019.jpeg?wrap=0"
                                      class="mx-auto rounded-full border border-yellow-600 w-72 mb-8 bg-white"
                                 />
                             </div>
