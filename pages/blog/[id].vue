@@ -1,9 +1,9 @@
 <script setup>
 import {useRoute} from 'vue-router'
-
-const route = useRoute()
 import {NotionRenderer, useGetPageBlocks} from "vue3-notion"
 import {onMounted } from 'vue'
+
+const route = useRoute()
 const articleId = route.params.id.replace('.html', '');
 
 
