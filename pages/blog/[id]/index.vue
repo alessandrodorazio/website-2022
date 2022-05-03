@@ -24,7 +24,9 @@ onMounted(() =>{
         </Head>
         <div class="mt-8 lg:mt-0 mx-4" v-if="data">
             <div class="mb-2">
-                <NotionRenderer :blockMap="data" fullPage prism/>
+                <ClientOnly>
+                    <NotionRenderer :blockMap="data" fullPage prism/>
+                </ClientOnly>
             </div>
             <nuxt-button />
         </div>
