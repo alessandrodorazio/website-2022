@@ -23,11 +23,7 @@ export default defineNuxtConfig({
                     file: resolve(__dirname, 'pages/blog/[id]/index.vue')
                 },
 
-                {
-                    name: 'List Page',
-                    path: '/demo/:id/:id2',
-                    file: resolve(__dirname, 'pages/List.vue')
-                },
+
 
                 {
                     name: 'Not Found',
