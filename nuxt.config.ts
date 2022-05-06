@@ -19,7 +19,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'Article Page',
-                    path: '/blog:id(.*)',
+                    path: '/blog/:id',
                     file: resolve(__dirname, 'pages/blog/[id]/index.vue')
                 },
 
