@@ -3,7 +3,7 @@ const props = defineProps(["article"]);
 function padTo2Digits(num) {
     return num.toString().padStart(2, '0');
 }
-const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2Digits(props.article.date.getMonth()) + '/' + props.article.date.getFullYear();
+const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2Digits(props.article.date.getMonth() + 1) + '/' + props.article.date.getFullYear();
 </script>
 
 <template>
