@@ -1,6 +1,9 @@
 <script setup>
 const props = defineProps(["article"]);
-const dateFormatted = props.article.date.toLocaleDateString();
+function padTo2Digits(num) {
+    return num.toString().padStart(2, '0');
+}
+const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2Digits(props.article.date.getMonth()) + '/' + props.article.date.getFullYear();
 </script>
 
 <template>
