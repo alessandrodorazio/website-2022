@@ -32,6 +32,11 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import { getPageTable } from "vue3-notion";
+useHead({
+    title: "Alessandro D'Orazio",
+    viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+    charset: 'utf-8',
+})
 const pageTable = ref(null);
 const posts = ref(null);
 const postsStarred = ref(null);
