@@ -7,8 +7,7 @@
   },
   "devDependencies": {
     "nuxt3": "latest",
-    "nuxt": "^3.0.0-rc.2",
-    "vue": "^3.2.31",
+    "vue": "latest",
     "unenv": "latest",
     "@nuxtjs/tailwindcss": "^5.0.2",
     "vue3-notion": "^0.1.26"
