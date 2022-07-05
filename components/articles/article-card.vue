@@ -10,6 +10,7 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
   <div
     :class="{
       'bg-gradient': !props.article.starred,
+      'px-4': props.article.starred
     }"
   >
     <div
@@ -20,11 +21,11 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
     >
       <div class="link-container">
         <NuxtLink
-          :href="'/blog/' + props.article.slug + '.html'"
+          :href="'/blog/' + props.article.slug"
           :class="{ 'mb-1': !props.article.starred }"
         >
           <h2 class="link-title-container">
-            <span v-if="props.article.starred">
+            <span v-if="props.article.starred && false">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
@@ -34,11 +35,11 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
                 <defs></defs>
                 <path
                   d="M528.53 171.5l-146.36-21.3-65.43-132.39c-11.71-23.59-45.68-23.89-57.48 0L193.83 150.2 47.47 171.5c-26.27 3.79-36.79 36.08-17.75 54.58l105.91 103-25 145.49c-4.52 26.3 23.22 46 46.48 33.69L288 439.56l130.93 68.69c23.26 12.21 51-7.39 46.48-33.69l-25-145.49 105.91-103c19-18.49 8.48-50.78-17.79-54.57zm-90.89 71l-66.05 64.23 15.63 90.86a12 12 0 0 1-17.4 12.66L288 367.27l-81.82 42.94a12 12 0 0 1-17.4-12.66l15.63-90.86-66-64.23A12 12 0 0 1 145 222l91.34-13.28 40.9-82.81a12 12 0 0 1 21.52 0l40.9 82.81L431 222a12 12 0 0 1 6.64 20.46z"
-                  class="fill-yellow-500"
+                  class="fill-yellow-300"
                 />
                 <path
                   d="M437.64 242.46l-66.05 64.23 15.63 90.86a12 12 0 0 1-17.4 12.66L288 367.27l-81.82 42.94a12 12 0 0 1-17.4-12.66l15.63-90.86-66-64.23A12 12 0 0 1 145 222l91.34-13.28 40.9-82.81a12 12 0 0 1 21.52 0l40.9 82.81L431 222a12 12 0 0 1 6.64 20.46z"
-                  class="fill-yellow-500"
+                  class="fill-yellow-200"
                 />
               </svg>
             </span>
@@ -47,8 +48,8 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
                 v-text="props.article.title"
                 class="link-title"
                 :class="{
-                  'from-orange-600 to-red-600': props.article.starred,
-                  'from-blue-800 to-purple-800': !props.article.starred,
+                  'from-orange-300 to-orange-300': props.article.starred,
+                  'from-blue-300 to-purple-300': !props.article.starred,
                 }"
               ></span>
               <span
@@ -65,7 +66,7 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          class="h-3 fill-gray-500"
+          class="h-3 fill-gray-300"
         >
           <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
           <path
@@ -86,7 +87,7 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
 
 <style scoped>
 .article-container {
-    @apply bg-white rounded-lg;
+    @apply bg-gray-900 rounded-lg;
 }
 
 .article-container.starred {
@@ -98,7 +99,7 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
 }
 
 .bg-gradient {
-    @apply px-[3px] py-[3px] bg-gradient-to-r from-blue-600 to-purple-600 rounded-[0.65rem] mt-2 lg:mt-4 mb-4;
+    @apply px-[2px] py-[2px] bg-gradient-to-r from-gray-800 to-gray-800 rounded-[0.65rem] mt-2 lg:mt-4 mb-4;
 }
 
 .link-container {
@@ -114,10 +115,10 @@ const dateFormatted = padTo2Digits(props.article.date.getDate()) + '/' + padTo2D
 }
 
 .updated-at {
-    @apply text-sm text-gray-500 mb-1 flex gap-1 items-center font-bold;
+    @apply text-sm text-gray-300 mb-1 flex gap-1 items-center font-bold;
 }
 
 .excerpt {
-    @apply break-words pb-2 text-base text-justify text-gray-600;
+    @apply break-words pb-2 text-base text-justify text-gray-400;
 }
 </style>

@@ -1,15 +1,13 @@
 <template>
   <div>
     <Head>
-      <title>Alessandro D'Orazio</title>
-      <Meta
-        name="description"
-        content="Software developer and AI/Web3 Enthusiast"
-      ></Meta>
+        <Title>Alessandro D'Orazio</Title>
+        <Meta name="description" content="Software developer and AI/Web3 Enthusiast"></Meta>
+        <Meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></Meta>
+        <Meta name="charset" content="UTF-8"></Meta>
     </Head>
     <div class="container">
       <div>
-        
         <div class="posts-list">
           <div class="article-card-starred-list-container" v-if="postsStarred">
             <article-list
@@ -30,32 +28,11 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
-import { getPageTable } from "vue3-notion";
-const pageTable = ref(null);
-const posts = ref(null);
-const postsStarred = ref(null);
-pageTable.value = await getPageTable("b4e2f642b4db46138ecc83ba12b63d0a");
+import { onMounted } from "vue";
+const {pageTable, postsStarred, posts, setData} = useNotion();
 
-  // sort published pages
-  pageTable.value.forEach((item) => {
-    item.date = new Date(item.date);
-  });
-
-   postsStarred.value = pageTable.value
-    .filter((page) => page.published && page.starred)
-    .sort((a, b) => {
-      // alphabetical order for starred
-      return a.title >= b.title ? 1 : -1;
-    });
-
-   posts.value = pageTable.value
-    .filter((page) => page.published && !page.starred)
-    .sort((a, b) => {
-      return b.date - a.date; // date order for non starred
-    });
 onMounted(async () => {
-  
   window.scroll(0, 0);
+  await setData()
 }); 
 </script>

@@ -17,15 +17,15 @@ const props = defineProps(["href"])
 }
 
 .button {
-    @apply inline-flex bg-gradient-to-r from-white to-white text-gray-700 fill-gray-700 transition transition-all duration-100 content-center py-1 px-4 rounded-full font-bold;
+    @apply inline-flex bg-gradient-to-r from-gray-900 to-gray-900 text-gray-700 fill-gray-700 transition transition-all duration-100 content-center py-1 px-4 rounded-full font-bold;
 }
 
 .button span {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200;
 }
 
 .button svg {
-    @apply fill-blue-600;
+    @apply fill-blue-200;
 }
 
 .button:hover {
