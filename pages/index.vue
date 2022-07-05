@@ -29,6 +29,7 @@
 
 <script setup>
 import { onMounted } from "vue";
+import {useNotion} from "../composables/useNotion";
 const {pageTable, postsStarred, posts, setData} = useNotion();
 
 onMounted(async () => {

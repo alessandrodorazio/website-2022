@@ -2,6 +2,7 @@
 import {useRoute} from 'vue-router'
 import {NotionRenderer, useGetPageBlocks} from "vue3-notion"
 import {computed, onMounted} from 'vue'
+import {useNotion} from "../../../composables/useNotion";
 
 const route = useRoute()
 const articleId = route.params.id.replace('.html', '');
