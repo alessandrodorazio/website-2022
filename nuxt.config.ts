@@ -4,9 +4,19 @@ import { createCommonJS } from 'mlly'
 const { __dirname } = createCommonJS(import.meta.url)
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-    buildModules: ["@nuxtjs/tailwindcss", "vue3-notion/nuxt"],
-    nitro: {
+    buildModules: ["vue3-notion/nuxt"],
+    /*nitro: {
         preset: 'vercel'
+    },*/
+    build: {
+        postcss: {
+            postcssOptions: {
+                plugins: {
+                    tailwindcss: {},
+                    autoprefixer: {},
+                },
+            },
+        },
     },
     hooks: {
         'pages:extend' (pages) {

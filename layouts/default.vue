@@ -3,7 +3,7 @@
       <Head>
         <Meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></Meta>
         <Meta name="charset" content="UTF-8"></Meta>
-      <Link rel="icon" type="image/x-icon" href="https://link.eu1.storjshare.io/ju7c2keywdl4rgmostpqhnjs6vfa/personal-website%2Falpaca019.jpeg?wrap=0"></Link>
+          <Link rel="icon" type="image/x-icon" href="https://link.eu1.storjshare.io/ju7c2keywdl4rgmostpqhnjs6vfa/personal-website%2Falpaca019.jpeg?wrap=0"></Link>
     </Head>
     <div class="bg-gray-900 min-h-screen">
       <div class="px-4 md:px-16 py-4" id="app-container">
@@ -38,7 +38,6 @@
 </template>
 
 <script setup>
-import "../assets/app.css";
 import Sidebar from '../components/sidebar.vue';
 import { useRoute } from "vue-router";
 const route = useRoute();
